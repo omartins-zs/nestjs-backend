@@ -1,14 +1,29 @@
 ### list developers
 GET http://localhost:3000/developers
 
+
 ### get by id developers
-GET http://localhost:3000/developers/1
+GET http://localhost:3000/developers/dev_XP4gJY8gExPUJZZMHyoCA
+
 
 ### create developers
 POST http://localhost:3000/developers
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johndoe@email.com",
+    "dateOfBirth": "1990-01-01"
+}
 
 ### update developers
-PATCH http://localhost:3000/developers/1
+PATCH http://localhost:3000/developers/dev_XP4gJY8gExPUJZZMHyoCA
+Content-Type: application/json
+
+{
+    "name": "Gabriel Martins"
+}
+
 
 ### delete developers
-DELETE http://localhost:3000/developers/1
+DELETE http://localhost:3000/developers/
